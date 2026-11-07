@@ -55,6 +55,34 @@ With **Vectorize Hindsight**, RecallDesk AI maintains persistent, isolated memor
 
 ---
 
+## 🎬 Live Demo & Evaluation Walkthrough
+
+Follow this step-by-step scenario to evaluate RecallDesk AI's persistent memory in action:
+
+### Step 1: Session 1 — Initial Problem Report
+1. Select customer **`Alex Rivera (demo_customer_01)`**.
+2. Send:
+   > *"Customer uses a Dell Windows 11 laptop. The laptop restarts unexpectedly, and a driver update was attempted but failed."*
+3. Observe the **Live Memory Inspector** on the right sidebar update with:
+   - Entity Graph: `Dell`, `Windows 11`, `Customer`
+   - Stored Facts: Hardware specs, unexpected restart observation, failed driver update record.
+
+### Step 2: Clear Session (Simulating Return Later)
+1. Click the **`+ New Session`** button in the left sidebar.
+2. The active conversation screen clears completely.
+3. Note that the customer identity (`demo_customer_01`) remains active.
+
+### Step 3: Session 2 — Persistent Memory Verification
+1. Send the follow-up message:
+   > *"My laptop is restarting again."*
+2. **Observe the AI Response**:
+   - The agent greets the user and immediately acknowledges their **Dell Windows 11 laptop**.
+   - The agent remembers that **driver updates already failed** and explicitly states it will bypass driver troubleshooting.
+   - The agent provides the next logical diagnostic tier (e.g. checking **Windows Event Viewer / Minidump logs** for `Event ID 41`).
+3. Click the **`⚡ Memories Recalled`** pill on the AI bubble to view the exact Hindsight facts injected into Gemini's context.
+
+---
+
 ## Quickstart Guide
 
 ### 1. Clone & Setup Environment
