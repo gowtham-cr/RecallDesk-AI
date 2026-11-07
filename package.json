@@ -1,0 +1,12 @@
+{
+  "name": "recalldesk-ai",
+  "version": "1.0.0",
+  "description": "Memory-powered customer support agent built with React, Express, Google Gemini, and Vectorize Hindsight.",
+  "scripts": {
+    "backend": "cd backend && npm start",
+    "frontend": "cd frontend && npm run dev",
+    "test:e2e": "node scripts/test-e2e.js"
+  },
+  "author": "Gowtham R",
+  "license": "MIT"
+}
